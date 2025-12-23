@@ -453,4 +453,50 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
+
+}
+/* --- ADICIONE ISTO NO FINAL DO ARQUIVO CSS --- */
+
+/* Regras para telemóveis e tablets (telas menores que 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Faz a parte de cima (foto e preço) ficar um em cima do outro */
+    .product-page-top {
+        flex-direction: column; /* Muda de linha para coluna */
+        padding-top: 20px;
+    }
+
+    /* 2. Tira o efeito "Sticky" (fixo) da descrição no telemóvel para não atrapalhar */
+    .product-info-section {
+        position: static; 
+        padding-bottom: 0;
+    }
+
+    /* 3. Ajusta o tamanho da imagem principal */
+    .main-image {
+        max-width: 100%; /* Ocupa a largura total */
+    }
+
+    /* 4. Ajusta a navegação das abas para não quebrar */
+    .tabs-nav {
+        overflow-x: auto; /* Permite rolar para o lado se não couber */
+        white-space: nowrap; /* Impede que os botões quebrem de linha */
+        padding-bottom: 10px; /* Espaço para a barra de rolagem */
+    }
+
+    /* 5. Empilha os cards de características (Bateria, Chamadas...) */
+    .features-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* 6. Ajusta a tabela de especificações para largura total */
+    .specs-table {
+        width: 100%;
+    }
+
+    /* 7. Ajusta o rodapé e vídeos */
+    .video-item video {
+        margin-bottom: 20px;
+    }
 }
