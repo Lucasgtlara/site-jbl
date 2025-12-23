@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - Envio</title>
+    <link rel="stylesheet" href="estilo.css"> 
+    <link rel="stylesheet" href="checkout_style.css"> </head>
+<body>
+    <div class="container checkout-page">
+        <div class="checkout-form">
+            <div class="checkout-steps">
+                <div class="step active"><span>1</span> ENVIO</div>
+                <div class="step"><span>2</span> PAGAMENTO</div>
+                <div class="step"><span>3</span> REVISAR</div>
+            </div>
+
+            <h1>FECHAR PEDIDO</h1>
+            <h2>1. ENVIO</h2>
+            
+            <div class="form-group">
+                <label for="email">Endereço de e-mail*</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="two-cols">
+                <div class="form-group">
+                    <label for="nome">Nome*</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome*</label>
+                    <input type="text" id="sobrenome" required>
+                </div>
+            </div>
+
+            <div class="two-cols">
+                <div class="form-group">
+                    <label for="cpf">Seu CPF*</label>
+                    <input type="text" id="cpf" placeholder="Exemplo: XXX.XXX.XXX-XX" required>
+                </div>
+                <div class="form-group">
+                    <label for="nasc">Data de nascimento*</label>
+                    <input type="text" id="nasc" placeholder="Exemplo: 28/03/1968" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="cep">CEP*</label>
+                <input type="text" id="cep" required>
+            </div>
+            
+            <button class="continue-button">CONTINUAR</button>
+
+        </div>
+
+        <div class="order-summary">
+            <h3>RESUMO DO CARRINHO</h3>
+            <div class="order-item">
+                <img src="imagem/imagem.png.png" alt="MTX TUNE 520BT" class="item-thumb">
+                <div class="item-details">
+                    <p>MTX TUNE 520BT</p>
+                    <p class="item-color">Cor: Black</p>
+                    <p class="item-qty">Qtd: 1</p>
+                    <p class="item-price">R$ 339,00</p>
+                </div>
+            </div>
+
+            <h3 class="summary-header">RESUMO DO PEDIDO</h3>
+            <div class="summary-line">
+                <span>Produto(s)</span>
+                <span>R$ 339,00</span>
+            </div>
+            <div class="summary-line">
+                <span>Frete</span>
+                <span>Grátis</span>
+            </div>
+
+            <div class="summary-total">
+                <div class="total-line">
+                    <span>Total</span>
+                    <span>R$ 339,00</span>
+                </div>
+            </div>
+            
+            <h3 class="summary-header">CÓDIGO PROMOCIONAL</h3>
+            <input type="text" placeholder="Inserir código" class="promo-input">
+
+        </div>
+    </div>
+</body>
+</html>
